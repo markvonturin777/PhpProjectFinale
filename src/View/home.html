@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="style/header_style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="conteudo"> 
+<section>
+	<h1>Articoli:</h1>
+		
+	<!--codice for twig usato per iterazione items-->
+	{% for article in articoli %}
+	<article>
+		<header>
+			<h2><a href="/singola?pagina={{article.id}}">{{article.titolo}}</a></h2>
+		
+			<h3>{{article.data}}</h3>
+		</header>
+
+		<p>{{article.testo}}</p>
+
+		
+
+	</article>
+	 {% endfor %}
+	
+	
+	
+</section>
+</div>
+
+</body>
+</html>

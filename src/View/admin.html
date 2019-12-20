@@ -1,0 +1,32 @@
+<head>
+	<title>Amministrazione</title>
+	<meta charset="utf-8">
+	<link href="style/header_style.css" rel="stylesheet">
+</head>
+
+<div id="conteudo">
+	<h1 style="text-align: center">Area riservata - Gestione dei contenuti</h1>
+	<p>{{MSG}}</p><br><br>
+	
+	<!--il contenuto privato del sito protetto da login e senha amministratore-->
+	<!--mi porta inserimento di nuovo articolo sulla view create-->
+	<a href="/create?metodo=inserimento-articolo">*Inserire Articolo</a><br><br><br>
+
+	<p>Elenco degli articoli:</p>
+	<table border="2" >
+		<tr>
+			<th>DATA</th>
+			<th>TITOLO</th>
+			<th>MODIFICA</th>
+			<th>DELETE</th>
+		</tr>
+		{% for article in articoli %}
+			<tr>
+				<td>{{article.data}}</td>
+				<td>{{article.titolo}}</td>
+				<td><a href="/update?metodo_modifica={{article.id}}" style="color:#01A9DB">Modifica</a></td>
+				<td><a href="/delete?metodo_delete={{article.id}}" style="color:#B40404">Delete</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+</div>

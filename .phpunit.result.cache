@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":272:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:4:{s:41:"SimpleMVC\test\FilterTest::testValidEmail";d:0.016;s:43:"SimpleMVC\test\FilterTest::testInvalidEmail";d:0.001;s:43:"SimpleMVC\test\FilterTest::testValidContent";d:0;s:45:"SimpleMVC\test\FilterTest::testInvalidContent";d:0;}}}

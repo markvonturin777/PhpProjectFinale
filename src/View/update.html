@@ -1,0 +1,24 @@
+<head>
+	<title>Amministrazione</title>
+	<link href="style/header_style.css" rel="stylesheet">
+</head>
+<div id="conteudo">
+<h1 style="text-align: center">Area riservata - Gestione dei contenuti</h1>
+<h1>Modifica Articolo</h1>
+
+<form action="/update" method="post">
+	<span>Data</span><br>
+	<input type="date" name="data" value="{{DATA}}"><br><br>
+
+	<span>Titolo</span><br>
+	<input type="text" name="titolo" value="{{TITOLO}}"><br><br>
+
+	<span>Testo</span><br>
+	<textarea cols="55" rows="5" name="testo">{{TESTO}}</textarea><br><br>
+
+	<!--value id to modify-->
+	<input type="hidden" name="id" value="{{ID}}">
+	
+	<input type="submit" value="Modifica">
+</form>
+</div>

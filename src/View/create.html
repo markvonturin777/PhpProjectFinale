@@ -1,0 +1,23 @@
+<head>
+	<title>Amministrazione</title>
+	<link href="style/header_style.css" rel="stylesheet">
+</head>
+<div id="conteudo">
+	<h1 style="text-align: center">Area riservata - Gestione dei contenuti</h1>
+<h1>Inserire Articolo</h1>
+
+<!--in action individuo path route e tipo metodo post-->
+<form action="/insert" enctype="multipart/form-data" method="post">
+	<span>Data</span><br>
+	<input required="required" type="date" name="data"><br><br>
+
+	<span>Titolo</span><br>
+	<input required="required" type="text" name="titolo"><br><br>
+	<!--campi required = inserimento obbligatorio-->
+	<span>Testo</span><br>
+	<textarea required="required" cols="55" rows="5" name="testo"></textarea><br><br>
+
+
+	<input type="submit" value="Inserire">
+</form>
+</div>
